@@ -6,6 +6,7 @@
     resultsContainer: null,
     json: [],
     success: Function.prototype,
+    onSearchChange: null,
     searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a></li>',
     templateMiddleware: Function.prototype,
     sortMiddleware: function () {
@@ -83,6 +84,7 @@
   function registerInput () {
     options.searchInput.addEventListener('keyup', function (e) {
       if (isWhitelistedKey(e.which)) {
+        options.onSearchChange && options.onSearchChange(e.target.value, options.searchInput, options.resultsContainer)
         emptyResultsContainer()
         search(e.target.value)
       }

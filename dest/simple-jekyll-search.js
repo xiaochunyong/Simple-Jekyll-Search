@@ -1,6 +1,6 @@
 /*!
   * Simple-Jekyll-Search v1.7.2 (https://github.com/christian-fei/Simple-Jekyll-Search)
-  * Copyright 2015-2018, Christian Fei
+  * Copyright 2015-2019, Christian Fei
   * Licensed under the MIT License.
   */
 
@@ -302,6 +302,7 @@ var _$src_8 = {};
     resultsContainer: null,
     json: [],
     success: Function.prototype,
+    onSearchChange: null,
     searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a></li>',
     templateMiddleware: Function.prototype,
     sortMiddleware: function () {
@@ -379,6 +380,7 @@ var _$src_8 = {};
   function registerInput () {
     options.searchInput.addEventListener('keyup', function (e) {
       if (isWhitelistedKey(e.which)) {
+        options.onSearchChange && options.onSearchChange(e.target.value, options.searchInput, options.resultsContainer)
         emptyResultsContainer()
         search(e.target.value)
       }
