@@ -1,6 +1,6 @@
 /*!
-  * Simple-Jekyll-Search v1.7.2 (https://github.com/christian-fei/Simple-Jekyll-Search)
-  * Copyright 2015-2019, Christian Fei
+  * Simple-Jekyll-Search v1.7.3 (https://github.com/xiaochunyong/Simple-Jekyll-Search)
+  * Copyright 2015-2019, Ely Xiao
   * Licensed under the MIT License.
   */
 

@@ -1,6 +1,6 @@
 {
   "name": "simple-jekyll-search",
-  "version": "1.7.2",
+  "version": "1.7.3",
   "description": "Simple Jekyll site search using javascript and json",
   "main": "dest/simple-jekyll-search.js",
   "scripts": {
@@ -18,18 +18,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/christian-fei/Simple-Jekyll-Search.git"
+    "url": "git+https://github.com/xiaochunyong/Simple-Jekyll-Search.git"
   },
-  "author": "Christian Fei",
+  "author": "Ely Xiao",
   "license": "MIT",
   "files": [
     "dest",
     "src"
   ],
   "bugs": {
-    "url": "https://github.com/christian-fei/Simple-Jekyll-Search/issues"
+    "url": "https://github.com/xiaochunyong/Simple-Jekyll-Search/issues"
   },
-  "homepage": "https://github.com/christian-fei/Simple-Jekyll-Search",
+  "homepage": "https://github.com/xiaochunyong/Simple-Jekyll-Search",
   "dependencies": {
     "fuzzysearch": "^1.0.3"
   },

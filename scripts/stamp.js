@@ -12,7 +12,7 @@ const year = new Date().getFullYear()
 const stampTop =
 `/*!
   * Simple-Jekyll-Search v${pkg.version} (${pkg.homepage})
-  * Copyright 2015-${year}, Christian Fei
+  * Copyright 2015-${year}, ${pkg.author}
   * Licensed under the MIT License.
   */
 
