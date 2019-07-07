@@ -90,6 +90,9 @@ Customize SimpleJekyllSearch by passing in your configuration options:
 var sjs = SimpleJekyllSearch({
   searchInput: document.getElementById('search-input'),
   resultsContainer: document.getElementById('results-container'),
+  onSearchChange: function(searchValue, searchInput, resultContainer) {
+    // control dom/css when searchValue has change  
+  },
   json: '/search.json'
 })
 ```
